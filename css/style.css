@@ -9,9 +9,7 @@
     position: absolute;
 }
 
-i:hover,
-.prev,
-.next {
+.point-navigator i {
     cursor: pointer;
 }
 
@@ -19,6 +17,9 @@ i:hover,
     display: flex;
 }
 
+.active {
+    color: blue;
+}
 
 
 /* header */
@@ -42,34 +43,53 @@ i:hover,
     transform: translateY(-50%);
     height: 100%;
     width: 120px;
-    background-color: black;
-    opacity: .7;
-    justify-content: center;
+    background: rgba(0, 0, 0, .7);
     align-items: center;
+    cursor: pointer;
 }
-
 
 .slider .next {
     right: 0;
 }
 
+.slider .next i {
+    margin: auto;
+    transform: translateX(50%);
+}
+
+.slider .prev i {
+    margin: auto;
+    transform: translateX(-50%);
+}
 
 .slider .prev i,
 .slider .next i,
 .point-navigator i {
     font-size: 30px;
-    color: aliceblue;
+    color: gray;
+    transition: color .4s;
+}
+
+.point-navigator i:hover {
+    color: white;
+    opacity: 1;
 }
 
 .point-navigator {
+    padding: 20px;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: black;
-    opacity: .7;
+    background: rgba(0, 0, 0, .7);
     border-radius: 100px;
 }
 
 .point-navigator i {
-    padding: 20px 40px;
+    margin: 0px 40px;
 }
+
+.point-navigator i.active {
+    color: cornflowerblue;
+    opacity: 1;
+}
+

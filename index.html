@@ -10,25 +10,27 @@
 </head>
 <body>
 
-    <div id="app-slider" class="p-relative">
+    <div id="app" class="p-relative">
         <div class="slider p-relative">
             <!-- image -->
             <div class="image">
-                <img src="./img/image1.jpg" alt="">
+                <img :src="imgs[indexImg]" alt="">
             </div>
             <!-- arrow left -->
-            <div class="prev p-absolute flex">
+            <div class="prev p-absolute flex" @click='prevImg'>
                 <i class="fas fa-chevron-left"></i>
             </div>
             <!-- arrow right -->
-            <div class="next p-absolute flex">
+            <div class="next p-absolute flex" @click='nextImg'>
                 <i class="fas fa-chevron-right"></i>
             </div>
         </div>
         <div class="point-navigator p-absolute flex">
+            <!-- <i class="fas fa-circle active"></i>
             <i class="fas fa-circle"></i>
             <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i> -->
+
             <i class="fas fa-circle"></i>
         </div>
     </div>
