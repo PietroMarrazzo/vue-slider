@@ -27,8 +27,7 @@ i:hover,
 }
 
 .slider .image {
-    height: 100vh;
-    min-height: 100vh;
+    height: 800px;
 }
 
 .slider .image img {
@@ -66,8 +65,11 @@ i:hover,
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: black;
+    opacity: .7;
+    border-radius: 100px;
 }
 
 .point-navigator i {
-    padding: 0 40px;
+    padding: 20px 40px;
 }
