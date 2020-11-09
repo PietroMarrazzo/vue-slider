@@ -13,7 +13,7 @@
     <div id="app" class="p-relative">
         <div class="slider p-relative">
             <!-- image -->
-            <div class="image">
+            <div class="image" @mouseenter="endLoop" @mouseleave="startLoop">
                 <img :src="imgs[indexImg]" alt="">
             </div>
             <!-- arrow left -->
