@@ -22,7 +22,7 @@
 }
 
 
-/* header */
+/* SLIDER */
 .p-relative {
     position: relative;
 }
@@ -46,7 +46,15 @@
     background: rgba(0, 0, 0, .7);
     align-items: center;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity .5s;
 }
+
+.slider:hover .prev,
+.slider:hover .next {
+    opacity: 1;
+}
+
 
 .slider .next {
     right: 0;
@@ -80,8 +88,14 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0);
     border-radius: 100px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#app:hover .point-navigator {
+    opacity: 1;
 }
 
 .point-navigator i {
