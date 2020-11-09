@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .image {
+    height: 600px;
+}
+
+.slider .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
